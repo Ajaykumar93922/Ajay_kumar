@@ -59,9 +59,11 @@ a{
     padding:0% 5%;
 }
 
-.Hobbies,.Description,.Education,.Skills{
+.Description,.Education,.Skills{
     padding:7% 30%;
 }
+
+
 
 .carousel-item{
     padding:7% 30%;
@@ -84,14 +86,71 @@ a{
     padding-bottom:1.5rem;
 }
 
+.Hobbies{
+    padding:7% 5%;
+}
+
 .heading-project{
     font-size:3.5rem;
     font-family: 'Ubuntu', sans-serif;
     padding-bottom:1.5rem;
 }
 
+.Hobbies-list{
+    display:grid;
+    grid-gap:40px;
+    grid-template-columns:repeat( auto-fit,minmax(250px,1fr))
+}
+
+.hobby-item{
+    border-radius:10px;
+    position:relative;
+    overflow:hidden;
+}
+
+.hobby-item:hover img{
+    transform:scale(1.1);
+}
+
+.hobby-item:hover .layer{
+    height:100%;
+}
+
+.Hobbies img{
+    width:400px;
+    height:300px;
+    border-radius:10px;
+    display:block;
+    transition:transform 0.5s;
+}
+
 .list-icon{
     padding:0 20px;
+}
+
+.layer{
+    width:100%;
+    height:0%;
+    background:linear-gradient(rgba(0,0,0,0.6),#262626);
+    border-radius:10px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+    flex-direction:column;
+    padding:0 40px;
+    transition:height 0.5s;
+
+}
+
+.layer h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:medium;
+    font-weight:500;
 }
 
 .Myimage{
@@ -105,7 +164,7 @@ a{
     font-family: 'Allura', cursive;
     font-size:15rem;
     padding-top:8%;
-    
+
 }
 
 .nav-item{
@@ -146,7 +205,7 @@ a{
     width:5rem;
     height:5rem;
     margin:5% 5%;
-    
+
 }
 
 .text{
